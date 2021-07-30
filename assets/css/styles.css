@@ -11,14 +11,72 @@
 
     /* Colors */
     --Very-Dark-Desaturated-Blue: #48556A;
-    --Dark-Desaturated-Blue: #6D7F97;
+    --Desaturated-Blue: #6D7F97;
     --Grayish-Blue: #9EAFC2;
     --Light-Grayish-Blue: #ECF2F8;
 }
 
 /* Global Styles */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: var(--Main-Font);
     background-color: var(--Light-Grayish-Blue);
     min-height: 100vh;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Main Styles */
+
+.card{
+    max-width: 60vw;
+    max-height: 30vh;
+    display: flex;
+    background-color: white;
+}
+.card-img{
+    object-fit: cover;
+    width: 19rem;
+    height: 30vh;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.3rem;
+    margin-top: 2rem;
+    margin-right: 3.125rem;
+}
+.main-content h1{
+    font-size: 1.65rem;
+    line-height: 2.2rem;
+    color: var(--Very-Dark-Desaturated-Blue);
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+.main-content p{
+    font-size: 1rem;
+    line-height: 1.65rem;
+    color: var(--Desaturated-Blue);
+    font-weight: 500;
+}
+.bottom-content{
+    display: flex;
+}
+.profile{
+    display: flex;
+}
+.profile img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
 }
